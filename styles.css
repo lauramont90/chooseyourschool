@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('Creativo-Regular.otf') format('truetype');
+    /* Otras propiedades de la fuente, como weight y style */
+}
+body{
+    background-color: #22577a;
+
+}
+h1{
+    color: #c7f9cc;
+}
+h4{
+    font-family: 'MiFuentePersonalizada';
+    color: #c7f9cc;
+}
