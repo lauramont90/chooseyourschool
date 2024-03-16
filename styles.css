@@ -1,16 +1,475 @@
 @font-face {
     font-family: 'MiFuentePersonalizada';
-    src: url('Creativo-Regular.otf') format('truetype');
+    src: url('MarckScript-Regular.ttf') format('truetype');
     /* Otras propiedades de la fuente, como weight y style */
 }
+@font-face {
+    font-family: 'MiFuentePersonalizada2';
+    src: url('Berlina.ttf') format('truetype');
+    /* Otras propiedades de la fuente, como weight y style */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: poppins;
+    
+    
+}
 body{
-    background-color: #22577a;
+ 
+    box-shadow: -10px 0px 30px 0px rgb(172, 165, 165) inset;
+}
+
+
+/*********Navegador********/
+
+
+  
+header{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    box-shadow: 0 22px 25px -10px rgb(172, 165, 165);
+    width: 100%;
+    
+    background-color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    padding: 10px 0;
+    text-align: right;
+
 
 }
-h1{
-    color: #c7f9cc;
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3em;
+    align-items: baseline; 
 }
-h4{
-    font-family: 'MiFuentePersonalizada';
-    color: #c7f9cc;
+.br{
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+    padding-right: 2em;
 }
+.btn:hover{
+    color: #48d399;
+    font-size: 1.2em;
+    
+    
+}
+
+
+.btn{
+    color: black;
+    
+    margin: 15px 0;
+    padding: 10px 30px 10px;
+
+
+}
+.contacto{
+    border-radius: 25px;
+    background-color:#48d399;
+    color: white;
+    
+}
+.contacto:hover{
+    background-color: #48d399;
+    color: white;
+   
+}
+.box:active{
+    box-shadow: 0px 0px 34px 3px #48d399;
+    border-radius: 25px;
+}
+
+
+
+/*********Presentacion seccion 1 **********/
+h2{
+    font-size: 1.9em;
+    text-align: center;
+}
+.mlm{
+    font-size: 3em;
+    color:#48d399;
+    font-weight: 900%;
+    font-family: poppins;
+}
+
+.fut{
+    text-align: left;
+    margin: 0;
+}
+h2{
+    text-align: left;
+}
+.cajagral{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    
+    padding-top: 2em;
+}
+.caja1{
+    
+    width: 46%;
+    margin: 12em 3em 3em;
+    display: flex;
+    flex-direction: column;
+}
+.caja2{
+    display: flex;
+    margin-top: 1em;
+    
+    width: 40%;
+    
+}
+.imgcaja2{
+    width: 100%;
+}
+
+
+.boton{
+    height: 50px;
+    width: 32%;
+    border: none;
+    color: #FFF;
+    background-color: #48d399;
+    display: block;
+    margin: 40px 0px 100px; 
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+/**********Parrafos y titulos****/
+.parrafos{
+    font-size: 1.1em;
+    color: black;
+    text-align: center;
+    margin: 2em;
+    
+
+}
+.titulo{
+    font-size: 45px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+    padding: 0.5em;
+}
+/****Imagenes de mis conocimientos****/
+.cajagralimg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    
+    margin: 0 auto;
+}
+
+.bor{
+    justify-content: center;
+    border: 1px solid rgb(167, 166, 166);
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 60px 60px;
+    background-color: white;
+    width: 30%;
+
+}
+.bor:hover, .bor1:hover{
+    border: #48d399 1px solid;
+    color: #48d399;
+}
+.fondogrey{
+    background-color: rgb(233, 233, 233);
+    padding-top: 100px;
+    
+    padding-bottom: 120px;  
+      
+
+    
+}
+/**********Seccion 3 cita******/
+
+.comilla{
+    font-size: 5em;
+    font-family: FontAwesome;
+    margin-top: 60px;
+
+}
+.cita{
+    text-align: center;
+}
+.espacio{
+    background-color: #48d399;
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding-top: 80px;
+    padding-bottom: 130px;
+    
+    }
+blockquote{
+    padding: 60px;
+}
+/**********Mis Proyectos********/
+.proyect{
+    padding-top: 100px;
+    padding-bottom: 130px;
+    
+    
+    
+}
+.cajagralimg-mp{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 140px;
+   
+}
+.bor1{
+    justify-content: center;
+    border: 1px solid rgb(167, 166, 166);
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 60px 60px;
+    background-color: white;
+    width: 28%;
+}
+.mp1{
+
+    height: 300px;
+    
+    
+    
+    
+    text-align: center;
+}
+.imgt{
+    width: 100%;
+    text-align: center;
+    
+    
+    
+}
+
+
+
+
+/************CONTACTO Y FORMULARIO******/
+.backgrey{
+    background-color: rgb(241, 241, 241);
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 120px;
+   padding-top: 150px;
+   
+   
+}
+.medi{
+    font-size: 17px;
+}
+.contesc{
+    
+    
+    display: flex;
+    text-align: left;
+    width: 85%;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    justify-content: space-around;
+    padding-right: 40px;
+}
+.contact{
+   
+    width: 45%;
+    
+    padding-right: 20px;
+}
+.redesoc{
+    display: flex;
+    
+    
+}
+.icon{
+    color: #48d399;
+    font-size: 1.1em;
+    word-spacing: 1em;
+    padding: 0.6em;
+    
+}
+.red{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    margin: 0.4em;
+    
+}
+.redesoc:hover .icon{
+    border-radius: 5em;
+    color: white;
+    background-color: #48d399;
+    padding: 0.6em;
+
+}
+.redesoc:hover .red{
+    color: #48d399;
+}
+
+
+
+
+.form{
+    width: 50%;
+    
+    padding-left: 20px;
+}
+.nya{
+    width: 100%;
+    display: flex;
+    
+}
+      
+
+    
+    
+
+.left{
+    text-align: left;
+    padding: 0 1em 1em 0;
+    
+}
+.nomap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+.env{
+    background-color: #48d399;
+    color: white;
+    padding: 12px 35px 12px 35px;
+    font-size: 1em;
+    border-radius: 25px;
+    width: 25%;
+}
+.contactame{
+    text-align: left;
+
+}
+.msj {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+
+}
+input,
+textarea {
+    border-radius: 20px;
+    background-color: #f6f7fb;
+    border: 1px solid #f6f7fb;
+    padding: 10px 15px 10px 15px;
+    margin: 5px 15px 0px 0px;
+    display: flex;
+    width: 100%;
+    outline: none;
+}￼
+input, textarea:focus{
+    box-shadow: 0 0.1em 0.5em 0.1em #48d399;
+    border: 1px solid #48d399;
+
+}
+.nya:focus{
+    box-shadow: 0 0.1em 0.5em 0.1em #48d399;
+    border: 1px solid #48d399;
+}
+.mail:focus{
+    box-shadow: 0 0.1em 0.5em 0.1em #48d399;
+    border: 1px solid #48d399;
+}
+
+/*******FOOTER Y BARRA DE NAV INFERIOR****/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #48d399;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.fgral{
+    text-align: center;
+}
+.navinf a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+.fgral .navinf a:active{
+    box-shadow: 0.20em 0.1em 1.5em 0.1em; 
+}
+.redsocf{
+    padding-bottom: 2.2em;
+    display: flex;
+    justify-content: center;
+
+}
+.redso{
+    margin: 10px;
+}
+.white{
+    border-radius: 5em;
+    background-color: white;
+    padding: 0.8em;
+    color: #48d399;
+}
+
+.white:hover{
+    color: white;
+    background-color: #48d399;
+    border-radius: 5em;
+    padding: 0.75em;
+    border: 0.05em white solid;
+}
+
+.par{
+    color: white;
+    font-size: 16px;
+}
+.heart{
+    color: red;
+    font-size: 1em;
+}
+
+
+.contactfooter {
+    display: inline-flex;
+
+}
+
+/**ACLARACIONES***
+En la mayoria de los casos utilicé
+px en vez de em, los cuales me resultaron
+más prácticos para acomodar los estilos**/
