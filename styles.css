@@ -240,12 +240,13 @@ blockquote{
     
    
 }
+/*VER TAMAÑOS FOTOS*/
 .bor1{
     justify-content: center;
     border: 1px solid rgb(167, 166, 166);
     border-radius: 10px;
     margin: 10px 10px;
-    padding: 60px 60px;
+    padding: 20px 20px;
     background-color: white;
     width: 30%;
 }
@@ -482,8 +483,28 @@ footer {
     display: inline-flex;
 
 }
-
-/**ACLARACIONES***
-En la mayoria de los casos utilicé
-px en vez de em, los cuales me resultaron
-más prácticos para acomodar los estilos**/
+/************* SECCION DE NUESTROS SERVICIOS****************/
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card h2 {
+    margin: 0;
+  }
+  
+  .card p {
+    margin-top: 10px;
+  }
+  
