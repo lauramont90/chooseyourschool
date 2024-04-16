@@ -416,11 +416,19 @@ input, textarea:focus{
     border: none;
     color: #FFF;
     background-color: #48d399;
-    display: block;
+    display:block;
+    justify-content: center;
+    align-items: center;
     margin: 30px 20px 10px 5px; 
     border-radius: 25px;
     text-transform: uppercase;
     font-size: 16px;
+}
+.centre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 /*******FOOTER Y BARRA DE NAV INFERIOR****/
@@ -506,3 +514,6 @@ footer {
     margin: 10px;
   }
   
+  span {
+    color: #FFF;
+  }
