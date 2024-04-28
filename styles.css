@@ -38,7 +38,7 @@ header{
     background-color: white;
     font-size: 15px;
     font-family: Poppins;
-    padding: 10px 0;
+    padding: 12px 0;
     text-align: right;
 
 
@@ -46,8 +46,10 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
-    padding-right: 3em;
-    align-items: baseline; 
+    padding-left: 4em;
+    align-items:center;
+    text-align: center; 
+    width: 100%;
 }
 .br{
     text-decoration: none;
@@ -66,15 +68,18 @@ nav{
 .btn{
     color: black;
     
-    margin: 15px 0;
-    padding: 10px 30px 10px;
+    margin: 1px 0;
+    padding:  15px 30px;
 
 
 }
 .contacto{
-    border-radius: 25px;
+    border-radius: 30px;
     background-color:#48d399;
     color: white;
+    
+    display: inline-block;
+
     
 }
 .contacto:hover{
@@ -115,10 +120,13 @@ h2{
     width: 100%;
     
     padding-top: 2em;
+    background-image: url('back.png'); /* Cambia 'ruta/de/la/imagen.jpg' por la ruta de tu imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen */
 }
 .caja1{
     
-    width: 46%;
+    width: 70%;
     margin: 12em 3em 3em;
     display: flex;
     flex-direction: column;
@@ -343,7 +351,7 @@ blockquote{
     width: 50%;
     
     padding-left: 20px;
-    padding-top: 110px;
+    padding-top: 30px;
 }
 .nya{
     width: 100%;
@@ -542,4 +550,19 @@ footer {
     text-align: center;
     padding: 40px;
   }
-  
+  .cardte {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: inline-block;
+    margin: 20px;
+    border-color: solid 10px #48d399;
+    box-shadow: 0 0 10px rgb(129, 226, 145);
+  }
+  .cardt:hover{
+    background-color: #48d399;
+  }
+  .cardte:hover{
+    background-color: #48d399;
+  }
