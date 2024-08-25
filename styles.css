@@ -98,6 +98,10 @@ nav{
 h2{
     font-size: 1.9em;
     text-align: center;
+    font-style: normal;
+}
+.normal{
+    font-style: normal; !important
 }
 .mlm{
     font-size: 3em;
@@ -109,9 +113,12 @@ h2{
 .fut{
     text-align: left;
     margin: 0;
+    font-size: larger;
+
 }
 h2{
     text-align: left;
+    font-style: normal;
 }
 .cajagral{
     display: flex;
@@ -120,9 +127,10 @@ h2{
     width: 100%;
     
     padding-top: 2em;
-    background-image: url('back.png'); /* Cambia 'ruta/de/la/imagen.jpg' por la ruta de tu imagen */
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
-  background-position: center; /* Centra la imagen */
+   background-image: url('background1.png'); 
+  background-size: cover;
+  background-position: center; 
+
 }
 .caja1{
     
@@ -154,6 +162,7 @@ h2{
     border-radius: 25px;
     text-transform: uppercase;
     font-size: 16px;
+    font-weight: bold;
 }
 
 
@@ -163,6 +172,7 @@ h2{
     color: black;
     text-align: center;
     margin: 2em;
+    
     
 
 }

@@ -6,3 +6,13 @@ document.querySelectorAll('.card').forEach(card => {
     });
   });
   
+  const botonForm = document.getElementById("botonForm");
+
+  // Agrega un manejador de eventos al botón
+botonForm.addEventListener("click", function() {
+  // URL de WhatsApp que deseas abrir
+  const urlFormGoogle = "https://forms.gle/fBD2BqyLytFbD8nT6";
+
+  // Redirige a la URL de WhatsApp
+  window.open(urlFormGoogle, "_blank");
+});
