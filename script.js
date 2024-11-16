@@ -16,3 +16,4 @@ botonForm.addEventListener("click", function() {
   // Redirige a la URL de WhatsApp
   window.open(urlFormGoogle, "_blank");
 });
+
