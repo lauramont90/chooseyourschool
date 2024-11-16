@@ -1,0 +1,92 @@
+
+
+/* Estilos responsive para diferentes tamaños de pantalla */
+
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btn {
+        padding: 10px;
+        font-size: 1em;
+    }
+    .cajagral {
+        flex-direction: column;
+        padding: 1em;
+        margin: 0;
+    }
+    .caja1, .caja2 {
+        width: 100%;
+        margin: 1em 0;
+    }
+    .boton {
+        width: 100%;
+        font-size: 14px;
+        padding: 15px;
+    }
+    .cajagralimg, .cajagralimg-mp {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mp1 {
+        width: 80%;
+        height: auto;
+        margin-bottom: 1em;
+    }
+    .contact {
+        width: 100%;
+        text-align: center;
+    }
+    .contesc {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+    }
+    .form, .contact {
+        width: 90%;
+    }
+    .buttons {
+        width: 100%;
+    }
+    footer {
+        padding: 20px;
+        font-size: 0.8em;
+    }
+}
+
+/* Ajustes para pantallas de móviles más pequeños (max-width: 480px) */
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.5em;
+        padding: 0.5em 0;
+    }
+    .parrafos {
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    .card, .cardt, .cardte {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        border-radius: 15px;
+    }
+    .backgrey {
+        padding: 20px 10px;
+    }
+    .contesc {
+        padding: 10px;
+    }
+    .icon {
+        font-size: 1.2em;
+    }
+    .red {
+        font-size: 0.9em;
+    }
+}
