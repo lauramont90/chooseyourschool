@@ -20,14 +20,14 @@
         flex-direction: column;
         padding: 1em;
         margin: 0;
-        margin-top: 50px;
+       
     }
     .caja1, .caja2 {
         width: 100%;
         margin: 1em 0;
     }
     .boton {
-        width: 100%;
+        width: 50%;
         font-size: 14px;
         padding: 15px;
     }
@@ -143,80 +143,18 @@
         box-shadow: 0 0 10px rgb(129, 226, 145);
       }
 }
-/* Estilos para el Menú Hamburguesa */
-
-.menu-toggle {
-    display: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    margin-right: 1em;
-    color: #333;
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .navtop {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: white;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-    }
-
-    .navtop.nav-open {
-        display: flex;
-    }
-
-    .navtop a {
-        width: 100%;
-        padding: 15px 20px;
-        text-align: left;
-        border-bottom: 1px solid #e0e0e0;
-    }
-
-    .navtop a:hover {
-        background-color: #48d399;
-        color: white;
-    }
-}
-/* Eliminar espacio en blanco en el responsive */
-@media (max-width: 768px) {
-    body, html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        overflow-x: hidden; /* Evitar desplazamiento horizontal */
-    }
-
-    .navtop {
-        position: fixed; /* Asegura que el menú quede dentro del viewport */
-        top: 0;
-        left: 0;
-        width: 100%; /* Ocupa todo el ancho */
-        background-color: white;
-        z-index: 999; /* Aparece encima de otros elementos */
-    }
-
+/* Estilos generales */
+header {
+    background-color: #fff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media (max-width: 768px) {
     header {
-        width: 100%;
-        overflow-x: hidden; /* Asegura que el header no cause desbordamiento */
+      display: none; /* Oculta el header */
     }
-}
-
-/* Transición para el menú */
-.navtop {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out; /* Suavidad en la transición */
-}
-
-.navtop.nav-open {
-    opacity: 1; /* Asegúrate de que esté visible cuando esté abierto */
-}
+  }
+  

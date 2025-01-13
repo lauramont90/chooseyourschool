@@ -577,3 +577,66 @@ footer {
   .cardte:hover{
     background-color: #48d399;
   }
+  header {
+    background-color: rgba(0, 0, 0, 0.986); /* Transparente inicialmente */
+    color: rgba(12, 0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
+  
+  /* Clase que se activa al hacer scroll */
+  header.scrolled {
+    background-color: rgba(151, 255, 174, 0.253); /* Cambia a opaco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.103); /* Agrega sombra */
+  }
+  
+  /* Contenido principal */
+
+  .logo-container {
+    display: none; /* Oculto inicialmente */
+    position: fixed;
+    top: 10px; /* Ajusta según necesites */
+    left: 10px;
+    z-index: 1100; /* Por encima del contenido */
+  }
+
+  /* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+      display: none; /* Oculta el header en pantallas pequeñas */
+    }
+    .logo-container {
+      display: block; /* Muestra el logo en pantallas pequeñas */
+    }
+  }
+  
+
+  /* Estilos para el icono de WhatsApp */
+.whatsapp-icon {
+    width: 70px; /* Ajusta el tamaño del icono */
+    height: auto;
+    display: block;
+  }
+  
+  /* Posicionamiento fijo del icono en la esquina inferior derecha */
+  #whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde el borde derecho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: #ffffffc4; /* Color de fondo verde de WhatsApp */
+    border-radius: 50%; /* Hace el fondo redondeado */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para hacer el ícono más visible */
+    transition: transform 0.3s ease; /* Animación suave para el hover */
+  }
+  
+  #whatsapp-icon:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+  }
+ 

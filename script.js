@@ -50,3 +50,36 @@ window.addEventListener('scroll', function () {
   lastScrollY = window.scrollY;
 });
 
+
+// Selecciona el header
+const header = document.getElementById('header');
+
+// Agrega un evento para detectar el scroll
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) { // Si se ha hecho scroll más de 50px
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+const botonWhatsapp = document.getElementById("botonWhatsapp");
+// Agrega un manejador de eventos al botón
+botonWhatsapp.addEventListener("click", function() {
+  // URL de WhatsApp que deseas abrir
+  const urlWhatsapp = "https://wa.me/+541144446992?text=¡Gracias%20por%20la%20invitación!%20Mi%20nombre%20y%20apellido%20es...";
+
+  // Redirige a la URL de WhatsApp
+  window.open(urlWhatsapp, "_blank");
+});
+
+const botonWhatsappFooter = document.getElementById("botonWhatsappFooter");
+// Agrega un manejador de eventos al botón
+botonWhatsapp.addEventListener("click", function() {
+  // URL de WhatsApp que deseas abrir
+  const urlWhatsapp = "https://wa.me/+541144446992?text=¡Gracias%20por%20la%20invitación!%20Mi%20nombre%20y%20apellido%20es...";
+
+  // Redirige a la URL de WhatsApp
+  window.open(urlWhatsapp, "_blank");
+});
+
