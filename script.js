@@ -83,3 +83,36 @@ botonWhatsapp.addEventListener("click", function() {
   window.open(urlWhatsapp, "_blank");
 });
 
+// Variables del carrusel
+const carruselSlide = document.querySelector('.carrusel-slide');
+const imagenes = document.querySelectorAll('.carrusel-slide img');
+
+// Clonar las imágenes para crear un efecto infinito
+imagenes.forEach((imagen) => {
+  const clone = imagen.cloneNode(true);
+  carruselSlide.appendChild(clone);
+});
+
+// Función para mover el carrusel
+function moverCarrusel() {
+  const anchoImagen = imagenes[0].clientWidth;
+  carruselSlide.style.transition = 'transform 0.5s ease-in-out';
+  carruselSlide.style.transform = `translateX(-${anchoImagen}px)`;
+}
+
+// Función para reiniciar la posición del carrusel
+function reiniciarCarrusel() {
+  carruselSlide.style.transition = 'none';
+  carruselSlide.style.transform = 'translateX(0)';
+  setTimeout(() => {
+    moverCarrusel();
+  }, 50); // Pequeño retraso para reiniciar la animación
+}
+
+// Mover el carrusel automáticamente
+setInterval(() => {
+  moverCarrusel();
+  setTimeout(() => {
+    reiniciarCarrusel();
+  }, 500); // Tiempo en que se reinicia el carrusel
+}, 3000); // Intervalo entre cada desplazamiento

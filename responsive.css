@@ -72,6 +72,7 @@
     .titulo {
         font-size: 1.5em;
         padding: 0.5em 0;
+       
         
     }
     .parrafos {
@@ -142,7 +143,18 @@
         border-color: #48d399;
         box-shadow: 0 0 10px rgb(129, 226, 145);
       }
+      #logoete {
+        display: block; /* Asegura que el logo esté visible */
+        margin: 0 auto; /* Centra el logo si es necesario */
 }
+#logoete {
+    display: inline; /* Mantiene el logo visible junto con el título */
+}
+.mlm{
+    display: none;
+}
+
+
 /* Estilos generales */
 header {
     background-color: #fff;
@@ -157,4 +169,4 @@ header {
       display: none; /* Oculta el header */
     }
   }
-  
+}

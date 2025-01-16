@@ -114,6 +114,7 @@ h2{
     text-align: left;
     margin: 0;
     font-size: larger;
+    margin-bottom: 40%;
 
 }
 h2{
@@ -339,7 +340,7 @@ blockquote{
 }
 .red{
     text-decoration: none;
-    color: black;
+    color: rgba(0, 0, 0, 0.589);
     font-size: 1em;
     margin: 0.4em;
     
@@ -578,7 +579,8 @@ footer {
     background-color: #48d399;
   }
   header {
-    background-color: rgba(0, 0, 0, 0.986); /* Transparente inicialmente */
+    background-color: 
+    rgba(255, 255, 255, 0.274); /* Transparente inicialmente */
     color: rgba(12, 0, 0, 0);
     padding: 10px 20px;
     text-align: center;
@@ -640,3 +642,26 @@ footer {
     transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
   }
  
+
+  .carrusel-container {
+    width: 100%;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    position: relative;
+}
+
+  
+  /* Estilos del carrusel */
+  .carrusel-slide {
+    display: flex; /* Alinea las imágenes en una fila */
+    will-change: transform;
+  }
+  
+  /* Imágenes del carrusel */
+  .carrusel-slide img {
+    width: 50%;
+    height: auto;
+    flex-shrink: 0; /* Evita que las imágenes se encojan */
+  }
+  .imgunica {
+     display: none;
+  }
