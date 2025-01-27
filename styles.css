@@ -560,7 +560,7 @@ footer {
   
   .contentt {
     text-align: center;
-    padding: 40px;
+    padding: 35px;
   }
   .cardte {
     width: 200px;
@@ -664,4 +664,11 @@ footer {
   }
   .imgunica {
      display: none;
+  }
+  
+  #atencion {
+    padding-top: 30px;
+  }
+  #entrevista {
+    padding-top: 15px;
   }
