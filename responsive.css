@@ -34,6 +34,7 @@
     .cajagralimg, .cajagralimg-mp {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
     .mp1 {
       
@@ -48,7 +49,7 @@
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        width: 100%;
+        width: 90%;
     }
     .form, .contact {
         width: 90%;
@@ -65,6 +66,10 @@
         padding: 0.5em;
         margin: 2em;
     }
+    .contendored{
+        width: 50%;
+        
+    }
 }
 
 /* Ajustes para pantallas de móviles más pequeños (max-width: 480px) */
@@ -74,6 +79,9 @@
         padding: 0.5em 0;
        
         
+    }
+    .mlm{
+        display: none;
     }
     .parrafos {
         font-size: 1em;
@@ -104,6 +112,116 @@
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
+        padding: 0px;
+        
+       
+    }
+    .cardt {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-color: #f0f0f0;
+        display: inline-block;
+        margin: 20px;
+        border-color: #48d399;
+        box-shadow: 0 0 10px rgb(129, 226, 145);
+      }
+      .cardte {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #f0f0f0;
+        display: inline-block;
+        margin: 20px;
+        border-color: solid 10px #48d399;
+        box-shadow: 0 0 10px rgb(129, 226, 145);
+      }
+      .cardt:hover{
+        background-color: #48d399;
+      }
+      .cardte:hover{
+        background-color: #48d399;
+      }
+      .card {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: #f0f0f0;
+        display: inline-block;
+        margin: 20px;
+        border-color: #48d399;
+        box-shadow: 0 0 10px rgb(129, 226, 145);
+      }
+     
+
+
+
+/* Estilos generales */
+header {
+    background-color: #fff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    header {
+      display: none; /* Oculta el header */
+    }
+  }
+  #logoete {
+    display: inline; /* Mantiene el logo visible junto con el título */
+}
+
+
+}
+@media (max-width: 375px) {
+    .mlm{
+        display: none;
+    }
+    .contendored{
+        width: 100%;
+      
+    }
+    .titulo {
+        font-size: 1.5em;
+        padding: 0.5em 0;
+       
+        
+    }
+    .parrafos {
+        font-size: 1em;
+        padding: 0.5em;
+        margin: 2em;
+    }
+    .card, .cardt, .cardte {
+        width: 85%;
+        height: auto;
+        margin: 10px 0;
+        border-radius: 15px;
+    }
+    .backgrey {
+        padding: 20px 10px;
+    }
+    .contesc {
+        padding: 10px;
+    }
+    .icon {
+        font-size: 1.2em;
+    }
+    .red {
+        font-size: 0.9em;
+        margin: 0;
+    }
+
+    .cajagralimg-mp{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0px;
         
        
     }
@@ -162,11 +280,34 @@ header {
     padding: 10px 20px;
     text-align: center;
   }
-  
-  /* Media Query para pantallas pequeñas */
-  @media (max-width: 768px) {
-    header {
-      display: none; /* Oculta el header */
+}
+@media (max-width: 861px) {
+    
+    .contenedored {
+        width: 100%;
     }
-  }
+}
+@media (max-width: 384px) {
+    .redesoc{
+        display: flex;
+        width: 102%;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .contenedored {
+        width: 100%;
+    }
+    #logoete {
+        display: block; /* Asegura que el logo esté visible */
+        margin: 0 auto; /* Centra el logo si es necesario */
+}
+#logoete {
+    display: inline; /* Mantiene el logo visible junto con el título */
+}
+.mlm{
+    display: none;
+}
+.buttons {
+    width: 115%;
+}
 }
